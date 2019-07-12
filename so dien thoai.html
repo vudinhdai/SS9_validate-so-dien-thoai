@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tim so dien thoai</title>
+</head>
+<body>
+<script>
+    function validate(number) {
+        let reg = /^\(+[0-9]{2}\)+(?:-\([0-9]{8,12})\)$/;
+        return reg.test(number);
+    }
+
+    console.log(validate("(84)-(0978489648)"));
+    console.log(validate( "(a8)-(22222222"));
+</script>
+</body>
+</html>
